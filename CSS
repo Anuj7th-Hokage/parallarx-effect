@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#wrra{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+      z-index: -1;
+}
+
+.desc{
+     position: absolute;
+   /* border: 2px solid rgba(106, 105, 105, 0.627);
+    color: rgb(0,0,0);
+    background-color: aliceblue;
+    padding: 10px;
+    width: fit-content;
+  
+    z-index: 1;
+    text-align: center; */
+
+
+    text-align: center;
+   border: 3px solid rgb(103, 103, 103);
+   background-color: rgba(240, 248, 255, 0.503);
+   padding: 0.5rem ;
+   font-size: 3rem;
+   top: 40%;
+   left: 40%;
+}
+
+.background{
+   transform: translateZ(-40px) scale(5);
+}
+.forground{
+    transform: translateZ(-20px) scale(3);
+}
+
+
+.forground ,.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+
+}
+
+h1{
+    position: absolute;
+ color: aliceblue;
+ top: 15%;
+
+ font-size: 10rem;
+ text-shadow: 0 0 10px rgb(138, 138, 138);
+}
+
+
+section{
+    background-color: rgba(45,45,45);
+    color: rgb(255, 255, 255);
+    padding: 5rem 0;
+}
+.secH{
+    font-size: 5rem;
+    padding: 0 7rem;
+
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 5rem; 
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin: 2rem;
+   
+}
+.bg{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: black;
+   
+}
+.bg1{
+    background-image: url(sport-1.jpg);
+    
+  
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+ 
+}
+
+.bg3{
+    background-image: url(sport-3.jpg);
+  
+}
